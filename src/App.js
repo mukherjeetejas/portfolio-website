@@ -3,7 +3,7 @@ import GlobalStyle from "./components/GlobalStyle";
 //Pages
 import About from "./pages/About";
 import Nav from "./components/Nav";
-import OurWork from "./pages/OurWork";
+import MyWork from "./pages/MyWork";
 import ContactUs from "./pages/ContactUs";
 //Router
 import { Route, Switch } from "react-router-dom";
@@ -21,7 +21,7 @@ function App() {
           <ContactUs />
         </Route>
         <Route path="/work" exact>
-          <OurWork />
+          <MyWork />
         </Route>
       </Switch>
     </div>
