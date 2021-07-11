@@ -1,19 +1,23 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
+import {motion, AnimateSharedLayout} from "framer-motion"
 
 const QuesAns = ({ques,ans}) => {
+    const [toggle, setToggle] = useState(false)
     return(
-        <QuestionStyle>
-        <h4>{ques}</h4>
-        <div className="answer">
+        <AnimateSharedLayout>
+        <QuestionStyle layout>
+        <motion.h4 layout onClick = {()=>setToggle(true)} onMouseOut = {()=>setToggle(false)}>{ques}</motion.h4>
+        {toggle && <div className="answer">
             <p>{ans}</p>
-        </div>
+        </div>}
         <div className="faq-line"></div>
         </QuestionStyle>
+        </AnimateSharedLayout>
     )
 }
 
-const QuestionStyle = styled.div`
+const QuestionStyle = styled(motion.div)`
     padding: 3rem 0rem;
     cursor: pointer;
     .answer {
@@ -23,7 +27,7 @@ const QuestionStyle = styled.div`
     }
     }
     .faq-line {
-    background: #cccccc;
+    background: #23d997;
     height: 0.2rem;
     margin: 2rem 0rem;
     width: 100%;
