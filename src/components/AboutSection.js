@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 //Animation
 import { motion } from "framer-motion";
 import { titleAnim, fade, photoAnim } from "../Animation";
+//Wave
+import Wave from "./Wave";
 
 const AboutSection = () => {
   return (
@@ -34,6 +36,7 @@ const AboutSection = () => {
       <Image>
         <motion.img variants={photoAnim} src={port} alt="portfolio" />
       </Image>
+      <Wave/>
     </AboutStyles>
   );
 };
