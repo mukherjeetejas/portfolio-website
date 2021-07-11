@@ -2,6 +2,9 @@ import React from "react";
 import port from "../images/portfolio-image.jpg";
 import { AboutStyles, Description, Image, Hide } from "../styles";
 import { Link } from "react-router-dom";
+//Animation
+import { motion } from "framer-motion";
+import { titleAnim, fade, photoAnim } from "../Animation";
 
 const AboutSection = () => {
   return (
@@ -9,27 +12,27 @@ const AboutSection = () => {
       <Description>
         <div className="title">
           <Hide>
-            <h2>Tejas Mukherjee</h2>
+            <motion.h2 variants={titleAnim}>Tejas Mukherjee</motion.h2>
           </Hide>
           <Hide>
-            <h2>
+            <motion.h2 variants={titleAnim}>
               Web <span>Developer</span>
-            </h2>
+            </motion.h2>
           </Hide>
           <Hide>
-            <h2>Data Analyst</h2>
+            <motion.h2 variants={titleAnim}>Data Analyst</motion.h2>
           </Hide>
         </div>
-        <p>
+        <motion.p variants={fade}>
           Contact me for any web development or machine learning projects /
           internship opportunities
-        </p>
+        </motion.p>
         <Link to="/contact">
-          <button>Contact me</button>
+          <motion.button variants={fade}>Contact me</motion.button>
         </Link>
       </Description>
       <Image>
-        <img src={port} alt="portfolio" />
+        <motion.img variants={photoAnim} src={port} alt="portfolio" />
       </Image>
     </AboutStyles>
   );
