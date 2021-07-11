@@ -34,7 +34,7 @@ const AboutSection = () => {
         </Link>
       </Description>
       <Image>
-        <motion.img variants={photoAnim} src={port} alt="portfolio" />
+        <motion.img variants={photoAnim} initial="hidden" animate="show" src={port} alt="portfolio" />
       </Image>
       <Wave/>
     </AboutStyles>
