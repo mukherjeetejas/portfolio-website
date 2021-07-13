@@ -4,6 +4,10 @@ import cpp from "../images/cpp.png"
 import ml from "../images/ml.png"
 import phplogo from "../images/phplogo.png"
 import stock from "../images/stock.jpg"
+import java from "../images/java.png"
+import python from "../images/python.png"
+import flask from "../images/flask.jpg"
+import mysql from "../images/mysql.png"
 //styles
 import { AboutStyles, Description, Image } from "../styles";
 import styled from "styled-components";
@@ -44,25 +48,25 @@ const Services = () => {
                 </Card>
                 <Card>
                     <div className="icon">
-                        <img src={react} alt="react"/>
+                        <img src={mysql} alt="react"/>
                         <h3>MYSQL</h3>
                     </div>
                 </Card>
                 <Card>
                     <div className="icon">
-                        <img src={react} alt="react"/>
+                        <img src={java} alt="react"/>
                         <h3>Java</h3>
                     </div>
                 </Card>
                 <Card>
                     <div className="icon">
-                        <img src={react} alt="react"/>
+                        <img src={python} alt="react"/>
                         <h3>Python</h3>
                     </div>
                     </Card>
                     <Card>
                     <div className="icon">
-                        <img src={react} alt="react"/>
+                        <img src={flask} alt="react"/>
                         <h3>Flask</h3>
                     </div>
                 </Card>
