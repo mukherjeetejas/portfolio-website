@@ -21,19 +21,19 @@ const ContactUs = () => {
       <div>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
+            <Circle src="https://seeklogo.com/images/L/linkedin-icon-logo-05B2880899-seeklogo.com.png" alt="linkedin logo" />
             <a href = "https://www.linkedin.com/in/tejas-mukherjee/"><h2>Linkedin</h2></a>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
+            <Circle src = "https://seeklogo.com/images/G/github-logo-7880D80B8D-seeklogo.com.png" alt ="github logo"/>
             <a href="https://github.com/mukherjeetejas/"><h2>Github</h2></a>
           </Social>
         </Hide>
         <Hide>
           <Social variants={titleAnim}>
-            <Circle />
+            <Circle src="https://seeklogo.com/images/I/instagram-new-2016-logo-D9D42A0AD4-seeklogo.com.png" alt="instagram logo"/>
             <a href="https://www.instagram.com/tejasmukherjee/"><h2>Instagram</h2></a>
           </Social>
         </Hide>
@@ -54,11 +54,10 @@ const Title = styled.div`
 const Hide = styled.div`
   overflow: hidden;
 `;
-const Circle = styled.div`
+const Circle = styled.img`
   border-radius: 50%;
   width: 3rem;
   height: 3rem;
-  background: #353535;
 `;
 const Social = styled(motion.div)`
   display: flex;
