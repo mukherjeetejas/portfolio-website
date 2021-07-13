@@ -12,13 +12,13 @@ import mysql from "../images/mysql.png"
 import { AboutStyles, Description, Image } from "../styles";
 import styled from "styled-components";
 //motion 
-import {fade} from "../Animation";
+import {scrollReveal} from "../Animation";
 import {useScroll } from "./useScroll"
 
 const Services = () => {
   const [elements , controls ] = useScroll()
     return (
-    <ServicesStyle variants={fade} animate={controls} initial="hidden" ref = {elements}>
+    <ServicesStyle variants={scrollReveal} animate={controls} initial="hidden" ref = {elements}>
         <Description>
             <h2>Technical <span>Stack</span></h2>
             <Cards>
