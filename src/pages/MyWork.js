@@ -8,14 +8,14 @@ import { pageAnimation, fade, photoAnim, slider, sliderContainer, lineAnim } fro
 
 const MyWork = () => {
   const myworks = ProjectData.map(work => (
-    <Movie>
+    <Container>
       <motion.h2 variants={fade}>{work.name}</motion.h2>
       <motion.div variants={lineAnim} className="line"></motion.div>
       <Link to={"/work/" + work.name}> <Hide>
         <motion.img variants={photoAnim} src={work.image} alt="athlete" />
         </Hide>
       </Link>
-    </Movie>
+    </Container>
   ));
   return (
   <>
@@ -44,7 +44,7 @@ const Work = styled(motion.div)`
     color: white;
   }
 `;
-const Movie = styled.div`
+const Container = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;

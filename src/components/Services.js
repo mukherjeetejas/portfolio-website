@@ -7,10 +7,14 @@ import stock from "../images/stock.jpg"
 //styles
 import { AboutStyles, Description, Image } from "../styles";
 import styled from "styled-components";
+//motion 
+import {fade} from "../Animation";
+import {useScroll } from "./useScroll"
 
 const Services = () => {
+  const [elements , controls ] = useScroll()
     return (
-    <ServicesStyle>
+    <ServicesStyle variants={fade} animate={controls} initial="hidden" ref = {elements}>
         <Description>
             <h2>Technical <span>Stack</span></h2>
             <Cards>
@@ -36,6 +40,30 @@ const Services = () => {
                     <div className="icon">
                         <img src={phplogo} alt="react"/>
                         <h3>PHP</h3>
+                    </div>
+                </Card>
+                <Card>
+                    <div className="icon">
+                        <img src={react} alt="react"/>
+                        <h3>MYSQL</h3>
+                    </div>
+                </Card>
+                <Card>
+                    <div className="icon">
+                        <img src={react} alt="react"/>
+                        <h3>Java</h3>
+                    </div>
+                </Card>
+                <Card>
+                    <div className="icon">
+                        <img src={react} alt="react"/>
+                        <h3>Python</h3>
+                    </div>
+                    </Card>
+                    <Card>
+                    <div className="icon">
+                        <img src={react} alt="react"/>
+                        <h3>Flask</h3>
                     </div>
                 </Card>
             </Cards>

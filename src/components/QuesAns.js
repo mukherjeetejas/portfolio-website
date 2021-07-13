@@ -7,7 +7,7 @@ const QuesAns = ({ques,ans}) => {
     return(
         <AnimateSharedLayout>
         <QuestionStyle layout>
-        <motion.h4 layout onClick = {()=>setToggle(true)} onMouseOut = {()=>setToggle(false)}>{ques}</motion.h4>
+        <motion.h4 layout onClick = {()=>setToggle(!toggle)}>{ques}</motion.h4>
         {toggle && <div className="answer">
             <p>{ans}</p>
         </div>}
