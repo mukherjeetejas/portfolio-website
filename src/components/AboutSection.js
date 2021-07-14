@@ -27,7 +27,7 @@ const AboutSection = () => {
         </div>
         <motion.p variants={fade}>
           Contact me for any web development or machine learning projects /
-          internship opportunities
+          internship opportunities.
         </motion.p>
         <Link to="/contact">
           <motion.button variants={fade}>Contact me</motion.button>

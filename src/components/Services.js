@@ -1,13 +1,12 @@
 import React from "react"
-import react from "../images/react.png"
+import react from "../images/react.svg"
 import cpp from "../images/cpp.png"
 import ml from "../images/ml.png"
-import phplogo from "../images/phplogo.png"
-import stock from "../images/stock.jpg"
+import phplogo from "../images/phplogo.jpg"
 import java from "../images/java.png"
 import python from "../images/python.png"
-import flask from "../images/flask.jpg"
 import mysql from "../images/mysql.png"
+import cpplogo from "../images/cpplogo.jpg"
 //styles
 import { AboutStyles, Description, Image } from "../styles";
 import styled from "styled-components";
@@ -36,8 +35,8 @@ const Services = () => {
                 </Card>
                 <Card>
                     <div className="icon">
-                        <img src={ml} alt="react"/>
-                        <h3>Machine Learning</h3>
+                        <img src={mysql} alt="react"/>
+                        <h3>MYSQL</h3>
                     </div>
                 </Card>
                 <Card>
@@ -48,8 +47,8 @@ const Services = () => {
                 </Card>
                 <Card>
                     <div className="icon">
-                        <img src={mysql} alt="react"/>
-                        <h3>MYSQL</h3>
+                        <img src={cpplogo} alt="react"/>
+                        <h3>C++</h3>
                     </div>
                 </Card>
                 <Card>
@@ -60,20 +59,20 @@ const Services = () => {
                 </Card>
                 <Card>
                     <div className="icon">
+                        <img src={ml} alt="react"/>
+                        <h3>Machine Learning</h3>
+                    </div>
+                </Card>
+                <Card>
+                    <div className="icon">
                         <img src={python} alt="react"/>
                         <h3>Python</h3>
                     </div>
                     </Card>
-                    <Card>
-                    <div className="icon">
-                        <img src={flask} alt="react"/>
-                        <h3>Flask</h3>
-                    </div>
-                </Card>
             </Cards>
         </Description>
         <Image>
-            <img src={stock} alt="service"/>
+            <img src="https://st4.depositphotos.com/4799321/20582/v/450/depositphotos_205822150-stock-illustration-vector-cartoon-computer-icon-comic.jpg" alt="service"/>
         </Image>
     </ServicesStyle>
     )
