@@ -43,6 +43,9 @@ const Work = styled(motion.div)`
     padding: 1rem 0rem;
     color: white;
   }
+  @media (max-width: 1300px) {
+    padding: 2rem 2rem;
+  }
 `;
 const Container = styled.div`
   padding-bottom: 10rem;
