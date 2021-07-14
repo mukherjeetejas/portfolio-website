@@ -4,7 +4,7 @@ import GlobalStyle from "./components/GlobalStyle";
 import About from "./pages/About";
 import Nav from "./components/Nav";
 import MyWork from "./pages/MyWork";
-import ContactUs from "./pages/ContactUs";
+import ContactMe from "./pages/ContactMe";
 import WorkDetail from "./pages/WorkDetail";
 //Router
 import { Route, Switch, useLocation } from "react-router-dom";
@@ -26,7 +26,7 @@ function App() {
             <About />
           </Route>
           <Route path="/contact" exact>
-            <ContactUs />
+            <ContactMe />
           </Route>
           <Route path="/work" exact>
             <MyWork />

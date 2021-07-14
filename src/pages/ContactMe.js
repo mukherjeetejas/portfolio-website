@@ -54,6 +54,9 @@ const ContactStyle = styled(motion.div)`
 const Title = styled.div`
   margin-bottom: 4rem;
   color: black;
+  @media (max-width: 1500px) {
+    margin-top: 5rem;
+  }
 `;
 const Hide = styled.div`
   overflow: hidden;
