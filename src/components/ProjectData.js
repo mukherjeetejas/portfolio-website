@@ -91,6 +91,31 @@ const ProjectData = [
       },
     ],
   },
+  {
+    key: 5,
+    name: "tmReviews",
+    image:
+      "https://raw.githubusercontent.com/mukherjeetejas/tmReviews/main/tmReviewsPC2.PNG",
+    image2:
+      "https://raw.githubusercontent.com/mukherjeetejas/tmReviews/main/tmReviewsMob.jpeg",
+    url: "/work/tmReviews",
+    props: [
+      {
+        title: "MERN",
+        description:
+          "Website is built using full MERN stack, with CRUD capabilities.",
+      },
+      {
+        title: "Redux",
+        description: "Web App uses Redux to manage state making the process easier",
+      },
+      {
+        title: "Checkout",
+        description:
+          "Upcoming",
+      },
+    ],
+  },
 ];
 
 export default ProjectData;
