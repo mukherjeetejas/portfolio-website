@@ -6,7 +6,7 @@ import download from "../images/download.png"
 const Resume = () => {
     return (
         // eslint-disable-next-line
-        <a href="https://drive.google.com/file/d/1VbLzCJudVs422_flZRWPkMzmOaZqJj6b/view?usp=sharing" download="myfile" target="_blank" > 
+        <a href="https://drive.google.com/file/d/1xHKRXKybQoT2ZgPGHXru6kd7oI5OvM5u/view?usp=sharing" download="myfile" target="_blank" > 
         <StyledDownload src={download} alt="download resume"/>
         </a>
     )
