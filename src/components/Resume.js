@@ -1,13 +1,13 @@
 import React from "react"
 import styled from "styled-components"
 //images
-import download from "../images/download.png" 
+import download from "../images/download.png"
 //<a href={require("../path/to/file.pdf")} download="myFile">Download file</a>
 const Resume = () => {
     return (
         // eslint-disable-next-line
-        <a href="https://drive.google.com/file/d/1spZkbt3PgvTe4d-8rx13AWDjaFcgimw4/view?usp=sharing" download="myfile" target="_blank" > 
-        <StyledDownload src={download} alt="download resume"/>
+        <a href="https://drive.google.com/file/d/1v-MHseSX2_ZhKiIWtWekOnhmTjBPoJD1/view?usp=sharing" download="myfile" target="_blank" >
+            <StyledDownload src={download} alt="download resume" />
         </a>
     )
 }
